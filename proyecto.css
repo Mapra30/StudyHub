@@ -4,11 +4,14 @@ body {
 }
 
 
-.icono {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-  vertical-align: middle;
+.icon {
+  width: 40px;       /* ancho */
+  height: 40px;      /* alto igual al ancho → círculo */
+  background-color: #39AFEA; /* color de fondo */
+  border-radius: 50%; /* hace que sea redondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
