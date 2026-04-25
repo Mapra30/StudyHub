@@ -1,3 +1,16 @@
 body{
     background-color: white;
+    
+}
+
+.formularioregistro{
+  background-color: #eef6ff;
+  width: fit-content;
+  border: solid 1px #2E86C1;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Nunito', sans-serif;
+  
+
 }
