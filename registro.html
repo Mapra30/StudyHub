@@ -56,6 +56,16 @@
 
 
     
+<script>
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+      e.preventDefault(); // evita que se envíe el formulario
+      const form = e.target.form;
+      const index = Array.prototype.indexOf.call(form, e.target);
+      form.elements[index + 1]?.focus(); // pasa al siguiente input
+    }
+  });
+</script>
 
 </body>
 </html>
