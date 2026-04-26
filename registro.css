@@ -110,3 +110,18 @@ body {
   background: #89d8ff;
   width: 100%;
 }
+
+a.btn {
+  display: inline-block;   /* lo hace comportarse como botón */
+  background-color: #ffffff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;   /* quita el subrayado */
+  font-family: 'Nunito', sans-serif;
+}
+
+a.btn:hover {
+  background-color: #ffffff;
+}
+
