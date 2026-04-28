@@ -18,13 +18,15 @@ if (!$nombre || !$nickname || !$email || !$password || !$date) {
     die("⚠️ Faltan datos en el formulario.");
 }
 
+// Encriptar la contraseña
 $hash = password_hash($password, PASSWORD_DEFAULT);
 
-$sql = "INSERT INTO usuarios (nombre, nickname, correo, clave, fecha_nacimiento) 
-        VALUES ('$nombre', '$nickname', '$email', '$hash', '$date')";
+// Insertar incluyendo fecha_registro
+$sql = "INSERT INTO usuarios (nombre, nickname, correo, clave, fecha_nacimiento, fecha_registro) 
+        VALUES ('$nombre', '$nickname', '$email', '$hash', '$date', NOW())";
 
 if ($conexion->query($sql) === TRUE) {
-    // ✅ Si todo va bien, redirige a la página de éxito
+    // ✅ Si todo salió bien, redirige a la página de éxito
     header("Location: registroexito.html");
     exit();
 } else {
@@ -32,6 +34,4 @@ if ($conexion->query($sql) === TRUE) {
 }
 
 $conexion->close();
-?>
-
 ?>
