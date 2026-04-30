@@ -337,4 +337,11 @@ h3{
     margin-top: 20px;
 }
 
+.titulo{
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 40px;
+}
+
 

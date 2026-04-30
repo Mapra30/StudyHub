@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyecto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" class="icon" sizes="1x1" href="imagenes/letrero3__1_-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&family=Sekuya&display=swap" rel="stylesheet">
+   
+    <title>ESTUDIO</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="navcontainer">
+                <a href="principal.html" class="logo">StudyHub</a>
+                <button class="menubtn" id="menub">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <ul class="navlinks" id="navlin">
+                    <li><a href="principal.html">Inicio</a></li>
+                    <li><a href="documentos.html">Documentos</a></li>
+                    <li><a href="flashcards.html">Flashcards</a></li>
+                    <li><a href="apuntes.html">Apuntes</a></li>
+                    <li><a href="tests.html">Tests</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+         <section class="carousel-section">
+        <div class="carousel">
+            <div class="carousel-container">
+                <img src="imagenes/letrero.png" class="carousel-slide">
+                <img src="imagenes/letrero2.png" class="carousel-slide">
+                <img src="imagenes/slogan2.png" class="carousel-slide">
+             
+            </div>
+
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+
+            <div class="carousel-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+    </section>
+    </header>
+
+    <script src="proyecto.js">
+
+    </script>
+
+
+     <h1 class="titulo">que deseas hacer hoy? </h1>
+
+     <h3 class="documentos">DOCUMENTOS</h3>
+     <h3 class="flashcards">FLASHCARDS</h3>
+        <h3 class="apuntes">APUNTES</h3>
+        <h3 class="tests">TESTS</h3>
+
+
+    </body>
